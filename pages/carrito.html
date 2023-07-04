@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="../multimedia/img/logo.png" />
+    
+</head>
+<body class="body">
+    <header>
+        <nav class="navegador">
+            
+            <ul class="container">
+                <li><img class="item" src="../multimedia/img/logo.png" alt="Logo"></li>
+                <li class="item">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li class="dropdown item">
+                    <button>Productos</button>
+                    
+                    <ul class="dropdown-content" >
+                        <li >
+                             <a href="../pages/pedidosoline.html">Pedidos online</a></li>
+                        <li><a href="../pages/tortaspersonalizadas.html">tortas personalizadas</a></li>
+                    </ul>
+                </li>
+                <li class="conteiner">
+                    <input class="input" type="text" id="buscar" placeholder="Buscar...">
+                    <button type="submit" class="item"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </li>
+                <li class="item"><i class="fa-solid fa-cart-shopping icono"></i><a href="../pages/carrito.html">Carrito</a> </li>
+                <li class="item"><i class="fa-solid fa-user icono"></i><a href="../pages/login.html">Login</a></li>
+            </ul> 
+             
+        </nav>
+    </header>
+    <main class="main">
+            <div class="offers-bar">
+                <i class="fa-regular fa-circle-xmark"></i>
+                <h2>OFERTAS</h2>
+                <p>¡Aprovecha nuestras increíbles promociones!</p>
+                <img src="../multimedia/img/50 Off Cupcake.jpeg" alt="50OFF Cupcakes">
+                <img src="../multimedia/img/2X1 Budines.jpeg" alt="2X1 Budines">
+            </div>
+            <div class="product-card">
+                <h1>Carrito de Compras</h1>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>SubTotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>  <img  src="../multimedia/img/muffin de chocolate.jpg" alt="Cupcakes de Chocolate"></td>
+                            <td>Cupcakes de Chocolate</td>
+                            <td><s>$60.00</s> $30.00</td>
+                            <td>2</td>
+                            <td>$60.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../multimedia/img/CarrotCake.jpg" alt="Carrot Cake"></td> 
+                            <td>Carrot Cake</td>
+                            <td>$900.00</td>
+                            <td>1</td>
+                            <td>$900.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../multimedia/img/alfajor con chips.jpg" alt="Alfajor con Chips de Chocolate"></td>
+                            <td>Alfajor con Chips de Chocolate</td>
+                            <td>$50.00</td>
+                            <td>3</td>
+                            <td>$150.00</td>
+                        </tr>
+                        <tr class="total">
+                            <td colspan="3">Total:</td>
+                            <td>$1110.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+    </main>
+    <footer class="footer container">
+    <div>
+        <h3 class="item">¿Tienes Dudas?</h3>
+        <sub class="item">Telefono de contacto: </sub>
+        <p class="item"><i class="fa-brands fa-whatsapp icono">  091234567</i> </p>
+        <sub class="item">Email: sofisbakerybliss@gmail.com</sub>
+    </div>
+    <div>
+        <h3 class="item">Siguenos</h3>
+        <sub > 
+           <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter icono"> </i></a>
+            <a href="http://www.facebook.com/"><i class="fa-brands fa-facebook-f icono"></i></a>
+            <a href="http://www.instagram.com/"><i class="fa-brands fa-instagram icono"></i></a>
+        </sub>
+    </div>
+    <div>
+        <h3 class="item">SUSCRIBETE A NUESTRA NEWSLATER</h3>
+        <input class="input item" id="email" placeholder="Email"/>
+        <button class="item" type="submit">Suscribirme</i></button>
+    </div>
+    </footer>
+    </body>
+</body>
+</html>
