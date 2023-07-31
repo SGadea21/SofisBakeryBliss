@@ -14,52 +14,60 @@
 <body class="body">
     <header>
         <nav class="navegador">
-            
-            <ul class="container_p">
-                <li><img class="item" src="../multimedia/img/logo.png" alt="Logo"></li>
-                <li class="item">
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li class="dropdown item">
-                    <button>Productos</button>
+            <ul class="LogoMenu">
+                <li class="container_p">
+                    <button>
+                        <img class="item " src="../multimedia/img/logo.png" alt="Logo">
+                        <label class="menu"> MENU</label>
+                    </button>
+                    <ul class=" container_p LogoMenuCont">
                     
-                    <ul class="dropdown-content" >
-                        <li >
-                             <a href="../pages/pedidosoline.html">Pedidos online</a></li>
-                        <li><a href="../pages/tortaspersonalizadas.html">tortas personalizadas</a></li>
-                    </ul>
+                        <li class="item ">
+                            <a href="../index.html">Inicio</a>
+                        </li>
+                        <li class="dropdown item ">
+                            <button>Productos</button>
+                            
+                            <ul class="dropdown-content" >
+                                <li >
+                                    <a href="../pages/pedidosoline.html">Pedidos online</a></li>
+                                <li><a href="../pages/tortaspersonalizadas.html">tortas personalizadas</a></li>
+                            </ul>
+                        </li>
+                        <li class="conteiner_p ">
+                            <input class="input" type="text" id="buscar" placeholder="Buscar...">
+                            <button type="submit" class="item"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </li>
+                        <li class="item"><i class="fa-solid fa-cart-shopping icono"></i><a href="../pages/carrito.html">Carrito</a> </li>
+                        <li class="item"><i class="fa-solid fa-user icono"></i><a href="../pages/login.html">Login</a></li>
+                    </ul> 
                 </li>
-                <li class="conteiner_p">
-                    <input class="input" type="text" id="buscar" placeholder="Buscar...">
-                    <button type="submit" class="item"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </li>
-                <li class="item"><i class="fa-solid fa-cart-shopping icono"></i><a href="../pages/carrito.html">Carrito</a> </li>
-                <li class="item"><i class="fa-solid fa-user icono"></i><a href="../pages/login.html">Login</a></li>
-            </ul> 
-             
+            </ul>
         </nav>
     </header>
     <main class="main">
-        <div class="form-container_p">
-            <h1>Iniciar sesión</h1>
-            <form action="#" method="post">
-              <div class="form-group_p">
+        <div class="login-container">
+           
+            <form  class="login-form"  method="post">
+             <h1>Iniciar sesión</h1>
+              <div >
                 <label for="username">Usuario:</label>
                 <input type="text" id="username" name="username" required>
               </div>
               
-              <div class="form-group_p">
+              <div >
                 <label for="password">Contraseña:</label>
                 <input type="password" id="password" name="password" required>
               </div>
               
-              <div class="form-group_p">
-                <input type="submit" value="Iniciar sesión">
+              <div>
+                <input class="button" type="submit" value="Iniciar sesión">
               </div>
                 <div>
                     <label>No tienes una cuanta?</label>
                     <a href="#"> Crear </a>
                 </div>
+            </form>
     </main>
     <footer class="footer container_p">
         <div>

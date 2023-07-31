@@ -349,39 +349,45 @@
 
 /*Form */
 
-  .form-container_p {
-    max-width: 768px;
-    margin: 0 auto;
-    color: #352D1B;
-    padding: 200px;
-  }
-  .form-container_p h1{
-  font-size: 40px ;
-  }
-  .form-group_p {
-    margin-bottom: 10px;
-  }
-  .form-group_p label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  .form-group_p input[type="text"],
-  .form-group_p input[type="password"] {
-    width: 100%;
-    padding: 5px;
-  }
-  .form-group_p input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #ffcccc;
-    color: #352D1B;
-    border: none;
-    cursor: pointer;
-  }
-  .form-group_p input[type="submit"]:hover {
-    background-color: #ffdddd;
-  }
 
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+}
+
+.login-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .login-form {
+    width: 100%;
+  }
+}
 
 /*Estilo carrito*/
   /* Estilos para las tarjetas de productos */
