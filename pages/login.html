@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/png" href="../multimedia/img/logo.png" />
@@ -13,7 +15,7 @@
     <header>
         <nav class="navegador">
             
-            <ul class="container">
+            <ul class="container_p">
                 <li><img class="item" src="../multimedia/img/logo.png" alt="Logo"></li>
                 <li class="item">
                     <a href="../index.html">Inicio</a>
@@ -27,7 +29,7 @@
                         <li><a href="../pages/tortaspersonalizadas.html">tortas personalizadas</a></li>
                     </ul>
                 </li>
-                <li class="conteiner">
+                <li class="conteiner_p">
                     <input class="input" type="text" id="buscar" placeholder="Buscar...">
                     <button type="submit" class="item"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </li>
@@ -38,20 +40,20 @@
         </nav>
     </header>
     <main class="main">
-        <div class="form-container">
+        <div class="form-container_p">
             <h1>Iniciar sesión</h1>
             <form action="#" method="post">
-              <div class="form-group">
+              <div class="form-group_p">
                 <label for="username">Usuario:</label>
                 <input type="text" id="username" name="username" required>
               </div>
               
-              <div class="form-group">
+              <div class="form-group_p">
                 <label for="password">Contraseña:</label>
                 <input type="password" id="password" name="password" required>
               </div>
               
-              <div class="form-group">
+              <div class="form-group_p">
                 <input type="submit" value="Iniciar sesión">
               </div>
                 <div>
@@ -59,28 +61,36 @@
                     <a href="#"> Crear </a>
                 </div>
     </main>
-    <footer class="footer container">
-    <div>
-        <h3 class="item">¿Tienes Dudas?</h3>
-        <sub class="item">Telefono de contacto: </sub>
-        <p class="item"><i class="fa-brands fa-whatsapp icono">  091234567</i> </p>
-        <sub class="item">Email: sofisbakerybliss@gmail.com</sub>
-    </div>
-    <div>
-        <h3 class="item">Siguenos</h3>
-        <sub > 
-           <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter icono"> </i></a>
-            <a href="http://www.facebook.com/"><i class="fa-brands fa-facebook-f icono"></i></a>
-            <a href="http://www.instagram.com/"><i class="fa-brands fa-instagram icono"></i></a>
-        </sub>
-    </div>
-    <div>
-        <h3 class="item">SUSCRIBETE A NUESTRA NEWSLATER</h3>
-        <input class="input item" id="email" placeholder="Email"/>
-        <button class="button" type="submit">Suscribirme</i></button>
-    </div>
-    
-    </footer>
-    </body>
+    <footer class="footer container_p">
+        <div>
+            <h3 class="item">¿Tienes Dudas?</h3>
+            <sub class="item">Telefono de contacto: </sub>
+            <p class="item"><i class="fa-brands fa-whatsapp icono">  091234567</i> </p>
+            <sub class="item">Email: sofisbakerybliss@gmail.com</sub>
+        </div>
+        <div>
+            <h3 >Siguenos</h3>
+            <div class="seguir">
+                <div>
+                    <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter icono"> </i></a>
+                </div>
+                <div>
+                    <a href="http://www.facebook.com/"><i class="fa-brands fa-facebook-f icono"></i></a>
+                </div>
+                <div>
+                    <a href="http://www.instagram.com/"><i class="fa-brands fa-instagram icono"></i></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3 class="item">SUSCRIBETE A NUESTRA NEWSLATER</h3>
+            <div class="mb-3">
+                <label for="exampleFormControlsucribe1" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="exampleFormsuscribe" placeholder="name@example.com">
+            </div>
+            <button class="button" type="submit">Suscribirme</i></button>
+        </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

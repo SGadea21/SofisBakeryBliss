@@ -4,7 +4,7 @@
   margin: 0px;
   padding: 0px;
   font-family: 'Jost', sans-serif;
-    
+  
 
 }
 
@@ -33,6 +33,8 @@
     list-style-type: none;
     padding: 5px;
     align-items: center;
+    width: 80%;
+    margin: 0px;
 }
 
 .navegador a{
@@ -89,7 +91,7 @@
   .icono{
     padding: 5px;
   }
-  .container {
+  .container_p {
     display: flex;
     justify-content: space-between;
 
@@ -97,9 +99,51 @@
   
   .item {
     flex: 1;
+    font-size: 18px;
     padding: 10px;
     margin: 5px;
   }
+  
+  /*Menu lo oculto para que se vea solo en mobile*/
+
+  .menu{
+    display: none;
+  }
+
+  
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .navegador{
+    flex-direction: column;
+  }
+
+  .container_p {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .LogoMenu
+  {
+    display: block;
+    align-content: center;
+  }
+  .LogoMenuCont
+  {
+    display: none;
+  }
+
+  .LogoMenu:hover .LogoMenuCont
+  {
+    display: block;
+  }
+.menu{
+  display: inline;
+}
+
+}
+
+
+
   /*main*/
   .main {
     padding: 0px;
@@ -107,31 +151,44 @@
 
  .video
   {
-    width: 100%;
-    
+    width: 100%; 
   }
 .text-overlay 
   {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
     color: #CBABF4;
+    position: relative;
+
 
   }
-
-.text-overlay h2,h1 {
-  font-size: 60px;
+.text-overlay .text {  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+.text-overlay h1 {
   font-weight: bold;
   margin-bottom: 10px;
+  font-size: x-large;
+  text-shadow: 4px 3px 0px #7A7A7A;
 }
 
 .text-overlay p {
-  font-size: 20px;
+  font-size-adjust: inherit;
   color: #fff;
+  overflow: hidden;
 }
   
+@media screen and (max-width: 768px) {
+  
+  .text-overlay .text {  position: absolute;
+    max-height: 90%;
+    overflow:scroll;
+  }
+}
+
 /* Estilos de productos */
 
   main {
@@ -155,10 +212,11 @@
   }
   .productos p{
     font-size: 18px;
+    text-align: justify;
   }
   .producto {
     flex: 1 1 300px;
-    height: 680PX;
+    height: 740PX;
     margin: 10px;
     padding: 20px;
     background-color: #fff;
@@ -190,6 +248,24 @@
     margin-right: 30px;
   }
 
+  @media screen and (max-width: 768px) {
+    .producto img{
+      width: 100%;
+      height: 60%;
+    }
+    .nosotros-container{
+      font-size: 20px;
+      display: block;
+    }
+    .nosotros-container p{
+      padding: 10px;
+      margin: 5px;
+    }
+    .imagen img{
+      height: 200px;
+      width: 200px;
+    }
+  }
 /*Barra de categoria*/
     .productos-online
     {
@@ -201,7 +277,7 @@
     .categoria
     {
       flex: 1 1 50px;
-      padding: 20px;
+      padding: 20px ;
       background-color: #956dc9;
     }
     .categoria h3 {
@@ -258,31 +334,43 @@
     resize: vertical;
     overflow: auto;
   }
+  @media screen and (max-width: 768px) {
+    .info h2,h1 {
+      font-size: large;
+    }
+    .info textarea 
+    {
+      width: 100%;
+      height: 200px;
+      resize: vertical;
+      overflow: auto;
+    }
+  }
 
 /*Form */
 
-  .form-container {
-    max-width: 300px;
+  .form-container_p {
+    max-width: 768px;
     margin: 0 auto;
     color: #352D1B;
     padding: 200px;
   }
-  .form-container h1{
+  .form-container_p h1{
   font-size: 40px ;
   }
-  .form-group {
+  .form-group_p {
     margin-bottom: 10px;
   }
-  .form-group label {
+  .form-group_p label {
     display: block;
     margin-bottom: 5px;
   }
-  .form-group input[type="text"],
-  .form-group input[type="password"] {
+  .form-group_p input[type="text"],
+  .form-group_p input[type="password"] {
     width: 100%;
     padding: 5px;
   }
-  .form-group input[type="submit"] {
+  .form-group_p input[type="submit"] {
     width: 100%;
     padding: 10px;
     background-color: #ffcccc;
@@ -290,7 +378,7 @@
     border: none;
     cursor: pointer;
   }
-  .form-group input[type="submit"]:hover {
+  .form-group_p input[type="submit"]:hover {
     background-color: #ffdddd;
   }
 
@@ -337,37 +425,58 @@
         padding: 20px;
         text-align: center;
     }
-    .offers-bar h2
+    .offers-bar__titulo
     {
       padding: 10px;
       font-weight: 900;
       font-style: italic;
       font-family: 'Poppins', sans-serif;
     }
-    .offers-bar p
+    .offers-bar__anuncio
     {
       padding: 10px;
       font-weight: 400;
       font-family: 'Poppins', sans-serif;
     }
-    .offers-bar i
+    .offers-bar__icono
     {
       position: absolute;
       top: 5px;
       right: 5px;
     }
-    .offers-bar img{
+    .offers-bar__img{
       margin: 10px;
       height: 240px;
     }
+
+    @media screen and (max-width: 1048px) {
+      .offers-bar{
+        position: relative;
+        top: auto;
+        width: auto;
+        right: auto;
+        margin: auto;
+        padding: auto;
+        text-align: center;
+      }
+      .offers-bar__img{
+      
+        height: 170px;
+      }
+      .product-card {
+        width: 90%;
+       overflow: scroll;
+    
+        }
+    }
+
 /*Footer*/
  
 
 .footer{
     background-color: #CBABF4;
     color: #352D1B;
-    padding: 20px;
-}
+  }
 
 .button {
   background-color: #ffcccc;
@@ -375,10 +484,80 @@
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 18px;
   cursor: pointer;
 }
-
+.seguir{
+  display: flex;
+  justify-content: center;
+}
 .button:hover {
   background-color: #ffdddd;
 }
+@media screen and (max-width: 768px) {
+  .footer{
+    display: flex;
+    align-content: center;
+    padding-inline-start: 20px;
+    text-align: center;
+  }
+}
+
+/*Galeria de imagenes*/
+.galeria {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(8, 100px);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+.galeria img {
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  justify-self: end;
+  margin: 5px;
+}
+  .pastelbn {
+    grid-area: 1 /1 / 3 / 3; 
+    margin: 5px;
+}
+  .cupcakes { 
+    grid-area: 1 / 3 / 3/ 5;
+    margin: 5px;
+    
+  } 
+  .pastelflores { 
+    grid-area: 3 / 1 / 7 / 2;
+    margin: 5px;
+  }  
+  .cremas { 
+    grid-area: 3/ 2 / 7 / 4;
+    margin: 5px;
+}
+  .pastelceleste { 
+    grid-area: 3 / 4 / 7/ 5;
+    margin: 5px;
+  }
+  .cakepop { 
+    grid-area: 7 / 1 / 9 / 3;
+    margin: 5px;
+    
+  }
+  .pastelrosa { 
+    grid-area: 7/ 3 / 9 / 5; 
+    margin: 5px;
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Estilos para pantallas con un ancho máximo de 768 píxeles o menos */
+    .galeria {
+      /*grid-template-rows: 50%;  redusco el alto a la mitad  */
+      grid-template-rows: 50%; 
+      margin-bottom: 100px;
+      padding-bottom: 50px;
+  
+
+  }}
