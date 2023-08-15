@@ -1,0 +1,56 @@
+
+
+/* Estilos de productos */
+
+main {
+    padding: 20px;
+  }
+  
+  %animacion
+  {
+      transform: scale(1.05);
+   }
+  section {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 32px;
+    color:map-get($colores, marron);
+  }
+
+  .productos {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px;
+    .producto {
+        flex: 1 1 300px;
+        height: 740PX;
+        margin: 10px;
+        padding: 20px;
+        background-color: map-get($colores, blanco);
+        border: 1px solid map-get($colores, blanco2);
+        border-radius: 5px;
+        h3 {
+            font-size: 24px;
+        }
+        p{
+            font-size: $letra-18;
+            text-align: center;
+        }
+    
+        img {
+            object-fit: cover;
+            height: 500px;
+            border-radius: 5px;
+        } 
+        &:hover {
+          @extend %animacion
+        }
+
+        @media screen and (max-width: 768px) {
+            img{
+              width: 100%;
+              height: 50%;
+            }
+        }
+    }
+ }

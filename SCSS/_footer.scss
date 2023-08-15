@@ -1,0 +1,21 @@
+/*Footer*/
+ 
+
+.footer{
+    background-color: map-get($colores, lila);
+    color: map-get($colores, marron);
+  
+    @media screen and (max-width: 768px) {
+        display: flex;
+        align-content: center;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+
+.seguir{
+  display: flex;
+  justify-content: center;
+}
+

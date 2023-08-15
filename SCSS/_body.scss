@@ -1,0 +1,34 @@
+/*body*/
+.body{
+    background-color: map-get($colores, body);
+   }
+
+   .input{
+    border-radius: 5px;
+    border: map-get($colores, lila2);
+    width: 200px;
+    font-size: 16px;
+    
+  }
+  .icono{
+    padding: 5px;
+  }
+  .container_p {
+    display: flex;
+    justify-content: space-between;
+    
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-content: center;
+    }
+  
+  }
+  
+  .item {
+    flex: 1;
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px;
+  }
+
+ 

@@ -1,0 +1,38 @@
+/*Barra de categoria*/
+.productos-online
+{
+  display: flex;
+  flex-wrap: wrap;
+  .section,h1{
+      margin: 20px;
+  }
+
+}
+.categoria
+{
+  flex: 1 1 50px;
+  padding: 20px ;
+  background-color: map-get($colores, violeta);
+
+    h3{
+        margin: 10px;
+    }
+   
+}
+
+.checklist {
+  list-style-type: none;
+  padding-left: 0;
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    input[type="checkbox"] {   
+        margin-right: 10px;
+    }
+    label {
+        display: inline-block;
+    }
+}
+

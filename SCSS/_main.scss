@@ -1,0 +1,60 @@
+
+  /*main*/
+  .main {
+    padding: 0px;
+  }
+
+ .video
+  {
+    width: 100%; 
+  }
+.text-overlay 
+  {
+    color: map-get($colores, lila);
+    position: relative;
+
+
+  }
+.text-overlay .text {  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  font-size: $letra-18;
+  text-align: center;
+}
+.text-overlay h1 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: x-large;
+  text-shadow: 4px 3px 0px #7A7A7A;
+}
+
+.text-overlay p {
+  font-size-adjust: inherit;
+  color: map-get($colores, blanco);
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  
+  .text-overlay .text {  position: absolute;
+    max-height: 90%;
+    overflow-anchor:auto;
+    overflow-y: scroll;
+  }
+}
+
+.button {
+  background-color: map-get($colores, rosa);
+  color: map-get($colores, marron);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: map-get($colores, rosa);
+  }
+}
+

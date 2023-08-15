@@ -1,0 +1,48 @@
+$letra-18: 18px;
+$colores:  (body:#E2DFF8,
+            lila:#CBABF4,
+            rosa:#ffcccc,
+            marron:#352D1B,
+            violeta:#956dc9, 
+            lila2:#d6aeeb,
+            violetasomb:#9218b13b,
+            blanco:#fff,
+            blanco2:#ddd);
+
+
+
+    $row-start:
+            (rs1:1,
+            rs2: 1,
+            rs3: 3,
+            rs4: 3,
+            rs5: 3,
+            rs6: 7 ,
+            rs7: 7);
+
+    $row-end:
+            (re1: 3,
+            re2:  3,
+            re3:  7,
+            re4:  7,
+            re5:  7,
+            re6:  9,
+            re7:  9  );
+
+    $col-start:
+            (cs1: 1,
+            cs2:  3,
+            cs3:  1,
+            cs4:  2,
+            cs5:  4,
+            cs6:  1,
+            cs7:  3);
+    
+    $col-end:
+            (ce1: 3,
+            ce2:  5,
+            ce3:  2,
+            ce4:  4,
+            ce5:  5,
+            ce6:  3,
+            ce7:  5 );

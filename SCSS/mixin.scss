@@ -1,0 +1,4 @@
+@mixin imagen-grid($row-start, $row-end, $col-start, $col-end) {
+    grid-area: #{$row-start} / #{$col-start} / #{$row-end} / #{$col-end};
+    margin: 5px;
+  }

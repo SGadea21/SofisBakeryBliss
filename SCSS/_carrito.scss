@@ -1,0 +1,91 @@
+/*Estilo carrito*/
+  /* Estilos para las tarjetas de productos */
+  .product-card {
+    padding: 20px;
+    margin: 20px;
+    max-width: 1500px;
+        h1{
+            color: #352D1B;
+            font-size: 40px;
+        }
+        
+        img{
+            object-fit: cover;
+            height: 200px;
+            padding: 15px;
+
+        }
+        td, th{
+            border-bottom: #956dc9 solid 1px;
+            padding: 10px;
+        }
+
+           @media screen and (max-width: 1048px) {
+
+        .product-card {
+          width: 90%;
+         overflow: scroll;
+      
+          }
+      }
+  
+    } 
+  
+    .total{
+      font-size: 24px;
+      text-align: left;
+    }
+
+    /* Estilos para la barra de ofertas */
+    .offers-bar {
+        color: white;
+        position: fixed;
+        right: 0px;
+        top: 20%;
+        width: 300px;
+        margin: 0;
+        background-color: #9218b13b;
+        padding: 20px;
+        text-align: center;
+
+        @media screen and (max-width: 1048px) {
+          
+              position: relative;
+              top: auto;
+              width: auto;
+              right: auto;
+              margin: auto;
+              padding: auto;
+              text-align: center;
+          }
+    }
+    .offers-bar__titulo
+    {
+      padding: 10px;
+      font-weight: 900;
+      font-style: italic;
+      font-family: 'Poppins', sans-serif;
+    }
+    .offers-bar__anuncio
+    {
+      padding: 10px;
+      font-weight: 400;
+      font-family: 'Poppins', sans-serif;
+    }
+    .offers-bar__icono
+    {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+    .offers-bar__img{
+      margin: 10px;
+      height: 240px;
+
+        @media screen and (max-width: 1048px) {
+            height: 170px;
+        
+        }
+    }
+
+ 

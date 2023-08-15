@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Metadatos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedidos online</title>
-    
+    <meta name="description" content="Explora nuestra selección de deliciosos productos en línea. Desde pasteles de chocolate hasta cheesecakes de fresa, encuentra una variedad de postres y tortas para satisfacer tus antojos. Realiza pedidos en línea y disfruta de la comodidad de tener tus dulces favoritos entregados en tu puerta. ¡Haz tu elección y agrega a tu carrito ahora!">
+    <!-- Estilos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,7 +14,9 @@
     
 </head>
 <body class="body">
+    <!-- Encabezado -->
     <header>
+        <!-- Menú de navegación -->
         <nav class="navegador">
             <ul class="LogoMenu">
                 <li class="container_p">
@@ -34,6 +38,7 @@
                                 <li><a href="../pages/tortaspersonalizadas.html">tortas personalizadas</a></li>
                             </ul>
                         </li>
+                         <!-- Barra de búsqueda -->
                         <li class="conteiner_p ">
                             <input class="input" type="text" id="buscar" placeholder="Buscar...">
                             <button type="submit" class="item"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -47,6 +52,7 @@
     </header>
     <main class="main">
         <div class="productos-online">
+            <!-- Categorías y botón de filtrar -->
                 <div class="categoria">
                     <h3>Categorias</h3>
                     <ul class="checklist">
@@ -55,7 +61,8 @@
                         <li><input type="checkbox" id  ="alfajores"><label for="alfajores"> Alfajores (4)</label></li>
                     </ul>
                     <button class ="button"> Filtrar</button>
-                </div>       
+                </div>  
+             <!-- Sección de productos -->     
             <section>
                 <h1>Nuestros Productos</h1>
                 <div class="productos">
@@ -129,7 +136,7 @@
                             <button class ="button"> Añadir al carrito</button>
                         </div>
                 </div>
-
+                 <!-- Navegación de páginas -->
                 <nav aria-label="Page navigation">
                     <ul class="pagination justify-content-center">
                       <li class="page-item disabled">
@@ -146,6 +153,7 @@
             </section>
         </div>
     </main>
+     <!-- Pie de página -->
     <footer class="footer container_p">
         <div>
             <h3 class="item">¿Tienes Dudas?</h3>
@@ -176,7 +184,7 @@
             <button class="button" type="submit">Suscribirme</i></button>
         </div>
     </footer>
-
+     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

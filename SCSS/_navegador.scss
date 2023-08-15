@@ -1,0 +1,107 @@
+
+/*NAV*/
+.navegador{
+    background-color:map-get($colores, lila);
+    color:map-get($colores, marron);
+    font-size: 16px;
+    font-weight: 600;
+
+    button{
+        background: none;
+        border: none;
+        text-decoration: none;
+        color:map-get($colores, marron);
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    ul{
+        list-style-type: none;
+        padding: 5px;
+        align-items: center;
+        width: 80%;
+        margin: 0px;                                       
+    }
+
+    a{
+
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+        
+    
+    }
+    img{
+        object-fit: cover;
+        width: 100px;
+        height: 100px;
+    }
+
+    @media screen and (max-width: 768px) {
+        
+        flex-direction: column;
+    }
+}
+
+
+/*Menu desplegable*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    &:hover .dropdown-content {
+        display: block;
+      }
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: map-get($colores, lila2);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(104, 7, 231, 0.856);
+    z-index: 1;
+    a {
+        color: 352D1B;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        &:hover {
+            background-color: map-get($colores, violeta);
+          }
+    }
+  }
+
+
+
+  
+  /*Menu lo oculto para que se vea solo en mobile*/
+
+  .menu{
+    display: none;
+  }
+
+  
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+
+  .LogoMenu
+  {
+    display: block;
+    align-content: center;
+
+    &:hover .LogoMenuCont{
+    display: block;
+    }
+  }
+  .LogoMenuCont
+  {
+    display: none;
+  }
+
+.menu{
+  display: inline;
+}
+
+}
