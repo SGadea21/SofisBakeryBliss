@@ -1,6 +1,7 @@
 /*Barra de categoria*/
 .productos-online
 {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   .section,h1{
@@ -10,14 +11,21 @@
 }
 .categoria
 {
-  flex: 1 1 50px;
+  
   padding: 20px ;
   background-color: map-get($colores, violeta);
 
     h3{
         margin: 10px;
     }
-   
+
+  
+    @media screen and (max-width: 768px) {
+      li{
+        display: inline-flex;
+        text-align: center;
+      } 
+    }
 }
 
 .checklist {

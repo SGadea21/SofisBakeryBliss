@@ -4,9 +4,11 @@
     padding: 20px;
     margin: 20px;
     max-width: 1500px;
+    align-content: center;
         h1{
             color: #352D1B;
             font-size: 40px;
+            text-align: center;
         }
         
         img{
@@ -20,13 +22,13 @@
             padding: 10px;
         }
 
-           @media screen and (max-width: 1048px) {
+       @media screen and (max-width: 1048px) {
 
-        .product-card {
-          width: 90%;
-         overflow: scroll;
-      
+          table {
+            display: block;
+            overflow-x: auto;
           }
+      
       }
   
     } 

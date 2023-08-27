@@ -146,14 +146,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px;
-  font-size: 18px;
+  font-size: 24px;
   text-align: center;
 }
 
 .text-overlay h1 {
   font-weight: bold;
   margin-bottom: 10px;
-  font-size: x-large;
+  font-size: 48px;
   text-shadow: 4px 3px 0px #7A7A7A;
 }
 
@@ -164,11 +164,19 @@
 }
 
 @media screen and (max-width: 768px) {
+  .text-overlay h1 {
+    font-size: 24px;
+  }
   .text-overlay .text {
     position: absolute;
+    font-size: 18px;
     max-height: 90%;
-    overflow-anchor: auto;
-    overflow-y: scroll;
+    width: 100%;
+  }
+  .video {
+    width: 100%;
+    min-height: 300px;
+    object-fit: cover;
   }
 }
 .button {
@@ -181,7 +189,17 @@
   cursor: pointer;
 }
 .button:hover {
-  background-color: #ffcccc;
+  background-color: #d6aeeb;
+}
+
+.flex-main {
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 768px) {
+  .flex-main {
+    flex-direction: column-reverse;
+  }
 }
 
 /* Estilos de productos */
@@ -191,6 +209,9 @@ main {
 
 .productos .producto:hover {
   transform: scale(1.05);
+  box-shadow: 8px 8px 13px 0px rgba(187, 141, 235, 0.62);
+  -webkit-box-shadow: 8px 8px 13px 0px rgba(187, 141, 235, 0.62);
+  -moz-box-shadow: 8px 8px 13px 0px rgba(187, 141, 235, 0.62);
 }
 
 section {
@@ -267,6 +288,7 @@ section {
 }
 /*Barra de categoria*/
 .productos-online {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -275,12 +297,17 @@ section {
 }
 
 .categoria {
-  flex: 1 1 50px;
   padding: 20px;
   background-color: #956dc9;
 }
 .categoria h3 {
   margin: 10px;
+}
+@media screen and (max-width: 768px) {
+  .categoria li {
+    display: inline-flex;
+    text-align: center;
+  }
 }
 
 .checklist {
@@ -337,10 +364,12 @@ section {
   padding: 20px;
   margin: 20px;
   max-width: 1500px;
+  align-content: center;
 }
 .product-card h1 {
   color: #352D1B;
   font-size: 40px;
+  text-align: center;
 }
 .product-card img {
   object-fit: cover;
@@ -352,9 +381,9 @@ section {
   padding: 10px;
 }
 @media screen and (max-width: 1048px) {
-  .product-card .product-card {
-    width: 90%;
-    overflow: scroll;
+  .product-card table {
+    display: block;
+    overflow-x: auto;
   }
 }
 

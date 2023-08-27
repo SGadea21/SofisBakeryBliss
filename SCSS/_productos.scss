@@ -9,6 +9,9 @@ main {
   %animacion
   {
       transform: scale(1.05);
+      box-shadow: 8px 8px 13px 0px rgba(187,141,235,0.62);
+      -webkit-box-shadow: 8px 8px 13px 0px rgba(187,141,235,0.62);
+      -moz-box-shadow: 8px 8px 13px 0px rgba(187,141,235,0.62);;
    }
   section {
     margin-bottom: 40px;

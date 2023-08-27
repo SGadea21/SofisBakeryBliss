@@ -20,13 +20,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px;
-  font-size: $letra-18;
+  font-size: 24px;
   text-align: center;
 }
 .text-overlay h1 {
   font-weight: bold;
   margin-bottom: 10px;
-  font-size: x-large;
+  font-size: 48px;
   text-shadow: 4px 3px 0px #7A7A7A;
 }
 
@@ -36,11 +36,20 @@
   overflow: hidden;
 }
 @media screen and (max-width: 768px) {
+  .text-overlay h1 {
+    font-size: 24px;
+  }
   
   .text-overlay .text {  position: absolute;
+    font-size: $letra-18;
     max-height: 90%;
-    overflow-anchor:auto;
-    overflow-y: scroll;
+    width: 100%;
+  }
+  .video
+  {
+    width: 100%; 
+    min-height: 300px;
+    object-fit: cover;
   }
 }
 
@@ -54,7 +63,15 @@
   cursor: pointer;
 
   &:hover {
-    background-color: map-get($colores, rosa);
+    background-color: map-get($colores, lila2);
   }
 }
 
+.flex-main{
+  display: flex;
+  flex-direction: row-reverse;
+
+  @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+  }
+}

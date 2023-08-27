@@ -50,18 +50,9 @@
             </ul>
         </nav>
     </header>
-    <main class="main">
+    <main class="main flex-main ">
         <div class="productos-online">
-            <!-- Categorías y botón de filtrar -->
-                <div class="categoria">
-                    <h3>Categorias</h3>
-                    <ul class="checklist">
-                        <li><input type="checkbox" id  ="postres"> <label for="postres">Postres(7)</label></li>
-                        <li><input type="checkbox" id  ="tortas"><label for="tortas">Tortas(5)</label></li>
-                        <li><input type="checkbox" id  ="alfajores"><label for="alfajores"> Alfajores (4)</label></li>
-                    </ul>
-                    <button class ="button"> Filtrar</button>
-                </div>  
+        
              <!-- Sección de productos -->     
             <section>
                 <h1>Nuestros Productos</h1>
@@ -80,6 +71,13 @@
                         <p>$500</p>
                         <button class ="button"> Añadir al carrito</button>
 
+                    </div>
+                    <div class="producto">
+                        <img src="../multimedia/img/alfajor con chips.jpg" alt="Alfajor con Chips de Chocolate">
+                        <h3>Alfajor con Chips de Chocolate</h3>
+                        <p>Tradicionales alfajores rellenos de dulce de leche y cubiertos con chips de chocolate.</p>
+                        <p>$50</p>
+                        <button class ="button"> Añadir al carrito</button>
                     </div>
                 </div>
                 <div class="productos">
@@ -100,6 +98,14 @@
                         <button class ="button"> Añadir al carrito</button>
 
                     </div>
+                    <div class="producto">
+                        <img src="../multimedia/img/rollsdecanela.jpg" alt="Rolls de Canela">
+                        <h3>Rolls de Canela</h3>
+                        <p>Deliciosos rolls de canela recién horneados, perfectos para disfrutar en cualquier momento.</p>
+                        <p>$40 </p>
+                        <button class ="button"> Añadir al carrito</button>
+                    </div>
+                    
                 </div>
 
                 <div class="productos">
@@ -117,24 +123,17 @@
                         <p>$60</p>
                         <button class ="button"> Añadir al carrito</button>
                       </div>
+                      <div class="producto">
+                        <img src="../multimedia/img/donas.jpg" alt="Donas Glaseadas">
+                        <h3>Donas Glaseadas</h3>
+                        <p>Deliciosos aros de masa frita, dulces y esponjosos, con diversos sabores y coberturas.</p>
+                        <p>$60</p>
+                        <button class ="button"> Añadir al carrito</button>
+                      </div>
                  
-
                 </div>
                 <div class="productos">
-                        <div class="producto">
-                            <img src="../multimedia/img/alfajor con chips.jpg" alt="Alfajor con Chips de Chocolate">
-                            <h3>Alfajor con Chips de Chocolate</h3>
-                            <p>Tradicionales alfajores rellenos de dulce de leche y cubiertos con chips de chocolate.</p>
-                            <p>$50</p>
-                            <button class ="button"> Añadir al carrito</button>
-                        </div>
-                        <div class="producto">
-                            <img src="../multimedia/img/rollsdecanela.jpg" alt="Rolls de Canela">
-                            <h3>Rolls de Canela</h3>
-                            <p>Deliciosos rolls de canela recién horneados, perfectos para disfrutar en cualquier momento.</p>
-                            <p>$40 </p>
-                            <button class ="button"> Añadir al carrito</button>
-                        </div>
+                  
                 </div>
                  <!-- Navegación de páginas -->
                 <nav aria-label="Page navigation">
@@ -150,8 +149,19 @@
                       </li>
                     </ul>
                   </nav>
-            </section>
+        
+            </section>        
         </div>
+        <!-- Categorías y botón de filtrar -->
+        <div class="categoria">
+            <h3>Categorias</h3>
+            <ul class="checklist">
+                <li><input type="checkbox" id  ="postres"> <label for="postres">Postres(7)</label></li>
+                <li><input type="checkbox" id  ="tortas"><label for="tortas">Tortas(5)</label></li>
+                <li><input type="checkbox" id  ="alfajores"><label for="alfajores"> Alfajores (4)</label></li>
+            </ul>
+            <button class ="button"> Filtrar</button>
+        </div>  
     </main>
      <!-- Pie de página -->
     <footer class="footer container_p">
